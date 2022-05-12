@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio desenvolvedor web</title>
     <style type="text/css">
-       @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 
         * {
             margin: 0;
@@ -67,7 +67,7 @@
             color: inherit;
         }
 
-        div a{
+        div a {
             text-decoration: none;
             color: inherit;
         }
@@ -82,8 +82,13 @@
             padding-bottom: .2em;
         }
 
-        .destaque p:first-child{
+        .destaque p:first-child {
             font-size: 1.3rem;
+        }
+
+        .btn-ir{
+            width: 120px;
+            height: 75px;
         }
 
     </style>
@@ -94,6 +99,7 @@
 
 <body>
 
+    
     <div class="container shadow p-3 mb-5 bg-white rounded">
         <header class="text-center">
             <h2>PORTFÓLIO DESENVOLVEDOR WEB</h2>
@@ -128,7 +134,7 @@
                     <p>Senac Blumenau</p>
                     <p>2019-2020</p>
                 </div>
-
+                <button onclick="proximaPagina()" class="btn-ir">IR PARA</button>
             </aside>
             <main class="col-sm-12 col-md-8">
                 <section>
@@ -159,9 +165,10 @@
                     <div class="destaque job shadow p-3 mb-5 bg-white rounded">
                         <a href="https://github.com/Evissoares/desafiopubfuture" target="_blank">
                             <p><i class="bi bi-github"></i> Controle Financeiro</p>
-                            <p>Projeto desenvolvido para apresentar as habilidades no desenvolvimento back-end com a linguagem Java e banco de dados relacional.</p>
+                            <p>Projeto desenvolvido para apresentar as habilidades no desenvolvimento back-end com a
+                                linguagem Java e banco de dados relacional.</p>
                             <p>Desafio PubFuture</p>
-                        </a> 
+                        </a>
                     </div>
 
                     <div class="destaque job shadow p-3 mb-5 bg-white rounded">
@@ -174,10 +181,13 @@
                     <div class="destaque job shadow p-3 mb-5 bg-white rounded">
                         <a href="https://github.com/Evissoares/br.sc.senac.librarySystem-webProject" target="_blank">
                             <p><i class="bi bi-github"></i> Sistema de Livraria</p>
-                            <p>Projeto desenvolvido como introdução ao framework Spring Boot no curso técnico em informática para internet da turma de 2019</p>
+                            <p>Projeto desenvolvido como introdução ao framework Spring Boot no curso técnico em
+                                informática para internet da turma de 2019</p>
                             <p>Senac Blumenau</p>
                         </a>
+                        
                     </div>
+                    
                 </section>
             </main>
         </div>
@@ -186,5 +196,14 @@
             <p>Desenvolvido por Everton Cardoso Soares - Todos os direitos reservados</p>
         </footer>
     </div>
+
+    <script>
+
+        function proximaPagina() {
+            window.location.href = "pagina.html"
+        }
+
+    </script>
 </body>
+
 </html>
